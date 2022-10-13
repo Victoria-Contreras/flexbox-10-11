@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium</title>
+    <style>
+        .column {
+            height: 500px;
+            width: 500px;
+            background-color: gray;
+            display: flex;
+
+        }
+
+        .column > div {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #one {
+            background-color: rgb(249, 131, 131);
+        }
+        #two {
+            background-color: rgb(136, 175, 252);
+        }
+        #three {
+            background-color: rgb(250, 250, 189);
+        }
+
+        body{
+            background-color: black;
+        }
+
+        /* I made the pixel requirements bigger since Im on a computer not phone  */
+        @media only screen and (min-width: 320px) and (max-width: 699px) {
+            body {
+                background-color: green;
+            }
+        }
+        @media only screen and (min-width: 700px) and (max-width: 900px) {
+            body {
+                background-color: orange;
+            }
+        }
+        @media only screen and (min-width: 1281px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="column">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+    
+    </div>
+
+</body>
+</html>
